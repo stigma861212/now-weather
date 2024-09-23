@@ -1,0 +1,68 @@
+{
+    "city": [
+        {
+            "englishName": "Keelung",
+            "chineseName": "基隆"
+        },
+        {
+            "englishName": "Taipei",
+            "chineseName": "台北"
+        },
+        {
+            "englishName": "Taoyuan",
+            "chineseName": "桃園"
+        },
+        {
+            "englishName": "Hsinchu",
+            "chineseName": "新竹"
+        },
+        {
+            "englishName": "Miaoli",
+            "chineseName": "苗栗"
+        },
+        {
+            "englishName": "Taichung",
+            "chineseName": "台中"
+        },
+        {
+            "englishName": "Changhua",
+            "chineseName": "彰化"
+        },
+        {
+            "englishName": "Yunlin",
+            "chineseName": "雲林"
+        },
+        {
+            "englishName": "Nantou",
+            "chineseName": "南投"
+        },
+        {
+            "englishName": "Chiayi",
+            "chineseName": "嘉義"
+        },
+        {
+            "englishName": "Tainan",
+            "chineseName": "台南"
+        },
+        {
+            "englishName": "Kaohsiung",
+            "chineseName": "高雄"
+        },
+        {
+            "englishName": "Pingtung",
+            "chineseName": "屏東"
+        },
+        {
+            "englishName": "Yilan",
+            "chineseName": "宜蘭"
+        },
+        {
+            "englishName": "Hualien",
+            "chineseName": "花蓮"
+        },
+        {
+            "englishName": "Taitung",
+            "chineseName": "台東"
+        }
+    ]
+}
