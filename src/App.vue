@@ -51,11 +51,11 @@ onMounted(async () => {
     if (cityWeatherData.rain) {
       element.weather = "rain";
       if (cityWeatherData.rain["1h"]) {
-        element.rain.oneHour = cityWeatherData.rain["1h"];
+        element.rain.oneHour = cityWeatherData.rain["1h"] + " mm/h";
       }
 
       if (cityWeatherData.rain["3h"]) {
-        element.rain.threeHours = cityWeatherData.rain["3h"];
+        element.rain.threeHours = cityWeatherData.rain["3h"] + " mm/h";
       }
     }
     else {

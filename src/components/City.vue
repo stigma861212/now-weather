@@ -4,8 +4,8 @@
     <div>經度: {{ data.city.coord.lon }} 緯度: {{ data.city.coord.lat }}</div>
     <div>體感溫度: {{ data.city.feelTemperature }}</div>
     <div>天氣概況: {{ data.city.weatherDescription }}，雲比例: {{ data.city.clouds }}</div>
-    <div v-if="data.city.rain.oneHour !== '' || data.city.rain.threeHours !== ''">累積雨量: 1hr:{{ data.city.rain.oneHour }}mm/h
-        3hr:{{ data.city.rain.oneHour }}mm/h</div>
+    <div v-if="data.city.rain.oneHour !== '' || data.city.rain.threeHours !== ''">累積雨量: 1hr:{{ data.city.rain.oneHour }}
+        3hr:{{ data.city.rain.oneHour }}</div>
     <div v-else>
         <br>
     </div>
