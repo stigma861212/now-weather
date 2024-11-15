@@ -25,7 +25,9 @@ npm run build
 
 ## Preparation
 
-Add the appid in ```App.vue```, appid can apply from the openweathermap website.
+Add the appid in ```.env``` file, appid can apply from the openweathermap website.
+
+```.env``` file need to add ```VITE_APP_APPID=your openweathermap appid```
 
 ## City Data
 

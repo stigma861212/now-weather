@@ -14,8 +14,7 @@ import axios from 'axios';
 import City from './components/City.vue';
 import { onMounted, reactive } from 'vue';
 
-/**openweathermap appid need to apply then paste */
-const appid: string = "";
+const appid: string = import.meta.env.VITE_APP_APPID;
 
 const cityList = reactive<Array<ICityInfo>>([]);
 
