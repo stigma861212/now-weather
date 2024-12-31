@@ -15,6 +15,7 @@
   import { onMounted, reactive } from 'vue';
 
   const appid: string = import.meta.env.VITE_APP_APPID;
+
   const cityList = reactive<Array<ICityInfo>>([]);
 
   onMounted(async () => {
@@ -106,15 +107,25 @@
   }
   /**取得城市天氣資料 */
   async function getCityWeatherData(cityName: string) {
-    const response = await axios.get(`https://now-weather-backend.onrender.com/api/weather?city=${cityName}`)
-    // console.log("response:", response);
-    return response.data;
+    if (!appid) {
+      const response = await axios.get(`https://now-weather-backend.onrender.com/api/weather?city=${cityName}`)
+      return response.data;
+    }
+    else {
+      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${appid}&units=metric&lang=zh_tw`)
+      return response.data;
+    }
   }
   /**取得城市空汙資料 */
   async function getCityAirPollutionData(lat: string, lon: string) {
-    const response = await axios.get(`https://now-weather-backend.onrender.com/api/air-pollution?lat=${lat}&lon=${lon}`)
-    // console.log("response:", response);
-    return response.data;
+    if (!appid) {
+      const response = await axios.get(`https://now-weather-backend.onrender.com/api/air-pollution?lat=${lat}&lon=${lon}`)
+      return response.data;
+    }
+    else {
+      const response = await axios.get(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${appid}`)
+      return response.data;
+    }
   }
 
 </script>
